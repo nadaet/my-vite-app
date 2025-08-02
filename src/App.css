@@ -1,0 +1,100 @@
+.navbar{
+  width: 100%;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+   background-color: #2c3e50;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color:#1abc9c;
+  color: black;
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 100px;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 3px solid white;
+}
+.header-portfolio{
+  color: #052c65;
+}
+.portfolio-overlay {
+  background-color: rgba(228, 231, 235, 0.7); /* خلفية زرقاء شفافة */
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.card:hover .portfolio-overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+.portfolio-card {
+  position: relative;
+  width: 100%;
+  max-width: 18rem;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: scale(1.03);
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+ 
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.portfolio-card:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.contact-section {
+  background-color: white;
+}
+.footer-section {
+  background-color: #2c3e50;
+}
+
+.footer-bottom {
+  background-color: #1a252f;
+  color: white;
+}
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 18px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.icon-circle:hover {
+  background-color: white;
+  color: #2c3e50; /* لون مختلف عند الهوفر */
+}
+
+
